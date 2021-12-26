@@ -66,15 +66,17 @@ body{
   inset: 50px;
   z-index: 10;
   display: flex;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .rocket .fa-rocket{
   position: absolute;
   color: crimson;
-  font-size: 3.5em;
+  font-size: 4em;
   -webkit-text-stroke: 1px rgb(19, 19, 19);
-  animation: animatedRocket 0.2s linear infinite;
+  animation: animatedRocket 0.3s linear infinite;
 }
 
 @keyframes animatedRocket {
@@ -85,8 +87,21 @@ body{
     transform: translate(0px, 3px) rotate(-45deg);
   }
 }
-/* .fa-cloud{
+.fa-cloud{
   position: absolute;
   top: calc(35px * var(--i));
   left: calc(45px * var(--i));
-} */
+  font-size: 2em;
+  color: #eaeef0;
+  -webkit-text-stroke: 1.5px rgb(19, 19, 19);
+  animation: animatedCloud 1s linear infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+@keyframes animatedCloud {
+  0%{
+    transform: translateY(calc(-35 * 5px));
+  }
+  100%{
+    transform: translateY(calc(35 * 5px));
+  }
+}
