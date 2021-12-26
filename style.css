@@ -48,6 +48,7 @@ body{
   position: absolute;
   inset:0;
   border-radius: 50%;
+  filter: blur(5px);
   background: linear-gradient(rgb(87, 170, 248), crimson, orange);
   animation: anim 0.75s linear infinite;
 }
@@ -60,3 +61,32 @@ body{
     transform: rotate(360deg);
   }
 }
+.rocket{
+  position: absolute;
+  inset: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rocket .fa-rocket{
+  position: absolute;
+  color: crimson;
+  font-size: 3.5em;
+  -webkit-text-stroke: 1px rgb(19, 19, 19);
+  animation: animatedRocket 0.2s linear infinite;
+}
+
+@keyframes animatedRocket {
+  0%, 100%{
+    transform: translate(0px, 0px) rotate(-45deg);
+  }
+  50%{
+    transform: translate(0px, 3px) rotate(-45deg);
+  }
+}
+/* .fa-cloud{
+  position: absolute;
+  top: calc(35px * var(--i));
+  left: calc(45px * var(--i));
+} */
