@@ -50,10 +50,10 @@ body{
   border-radius: 50%;
   filter: blur(5px);
   background: linear-gradient(rgb(87, 170, 248), crimson, orange);
-  animation: anim 0.75s linear infinite;
+  animation: animatedLoader 0.75s linear infinite;
 }
 
-@keyframes anim {
+@keyframes animatedLoader {
   0%{
     transform: rotate(0deg);
   }
@@ -77,6 +77,12 @@ body{
   font-size: 4em;
   -webkit-text-stroke: 1px rgb(19, 19, 19);
   animation: animatedRocket 0.3s linear infinite;
+}
+.fa-rocket:hover{
+  color: rgb(253, 4, 4);
+  cursor:wait;
+  font-size: 5em;
+  -webkit-text-stroke: 2px rgb(19, 19, 19);
 }
 
 @keyframes animatedRocket {
