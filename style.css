@@ -36,7 +36,7 @@ body{
   content: '';
   position: absolute;
   inset: 40px;
-  background: #eaeef0;
+  background: #6F6F6F;
   border-radius: 50%;
   border: 3px solid #6F6F6F;
   box-shadow: -8px -8px 25px rgba(255, 255, 255, 1),
