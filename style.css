@@ -8,7 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #6F6F6F;
+  background: #eaeef0;
 }
 .loader{
   position: relative;
@@ -18,8 +18,8 @@ body{
   position: relative;
   width: 250px;
   height: 250px;
-  background: #6F6F6F;
-  border: 6px solid #6F6F6F;
+  background: #eaeef0;
+  border: 6px solid #eaeef0;
   border-radius: 50%;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
   8px 8px 25px rgba(0, 0, 0, 0.2);
@@ -36,9 +36,9 @@ body{
   content: '';
   position: absolute;
   inset: 40px;
-  background: #6F6F6F;
+  background: #eaeef0;
   border-radius: 50%;
-  border: 3px solid #6F6F6F;
+  border: 3px solid #eaeef0;
   box-shadow: -8px -8px 25px rgba(255, 255, 255, 1),
   8px 8px 25px rgba(0, 0, 0, 0.25),
   inset 3px 3px 10px rgba(0, 0, 0, 0.15),
